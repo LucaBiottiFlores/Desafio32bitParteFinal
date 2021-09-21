@@ -1,28 +1,25 @@
+<!--////////// APP.VUE, COMPONENTE PRINCIPAL QUE SE ENCARGA DE MOSTRAR OTROS COMPONENTES EN LA VISTA ///////// -->
+<!-- Dentro del div se muestra el componente Navbar, que contiene la barra de navegación conectada al router-view que está dentro del <main>
+</main>, este se ocupa de mostrar las vistas configuradas en router.js   -->
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <Navbar />
+    <main>
+      <router-view />
+    </main>
   </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<!-- Dentro del script se importa el componente Navbar para que funcione -->
 
+<script>
+import Navbar from "./components/Navbar.vue";
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    Navbar,
+  },
+  name: "App",
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style scoped></style>
