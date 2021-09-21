@@ -1,4 +1,4 @@
-/* Dentro del store vamos a tener toda la data que se va usar en el proyecto, 
+/*   Dentro del store vamos a tener toda la data que se va usar en el proyecto, 
   en este caso es un objeto state que contiene un valor de "busqueda", que será ingresado por el usuario
   en la vista de "Busquedas", además, dentro del state, tenemos un arreglo de juegos, y cada juego tiene
   datos específicos que los diferencian entre sí.
